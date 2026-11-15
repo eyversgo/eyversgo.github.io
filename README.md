@@ -9,6 +9,19 @@
   <sub>English · <a href="README-ES.md">Español</a></sub>
 </p>
 
+<p align="center">
+  <img src="./assets/screenshots/home.jpg" alt="Portfolio home" width="900">
+</p>
+
+<p align="center">
+  <img src="./assets/screenshots/work.jpg" alt="Work 01: Apple Rebuilt" width="445">
+  <img src="./assets/screenshots/credentials.jpg" alt="Credentials carousel" width="445">
+</p>
+
+<p align="center">
+  <img src="./assets/screenshots/contact.jpg" alt="Contact form" width="445">
+</p>
+
 ## Overview
 
 A single static page written in plain HTML, CSS and JavaScript, with no build step. Each section opens as an expandable row and has its own clean URL (`/apple-rebuilt`, `/about`, `/contact`). The page opens in English, and the ES/EN switch remembers the visitor's choice.

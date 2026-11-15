@@ -9,6 +9,19 @@
   <sub><a href="README.md">English</a> · Español</sub>
 </p>
 
+<p align="center">
+  <img src="./assets/screenshots/home.jpg" alt="Portada del portafolio" width="900">
+</p>
+
+<p align="center">
+  <img src="./assets/screenshots/work.jpg" alt="Trabajo 01: Apple Rebuilt" width="445">
+  <img src="./assets/screenshots/credentials.jpg" alt="Carrusel de credenciales" width="445">
+</p>
+
+<p align="center">
+  <img src="./assets/screenshots/contact.jpg" alt="Formulario de contacto" width="445">
+</p>
+
 ## Resumen
 
 Una sola página estática en HTML, CSS y JavaScript, sin paso de compilación. Cada sección se abre como una fila desplegable y tiene su propia URL limpia (`/apple-rebuilt`, `/about`, `/contact`). La página abre en inglés, y el selector ES/EN recuerda la elección del visitante.
