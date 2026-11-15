@@ -288,10 +288,10 @@
           <p class="en">I am a frontend developer passionate about combining design with functionality to create intuitive and beautiful interfaces. I enjoy solving problems and seek to exceed expectations in every project, emphasizing the importance of experience and brand identity.</p>
         </div>
         <div class="links">
-          <a class="es red" href="https://drive.google.com/file/d/1yqWWjbJFkSgBOEUfa4XBf3SYTyyLbjbE/preview" data-cv>Ver currículum</a>
-          <a class="es" href="https://drive.google.com/uc?export=download&amp;id=1yqWWjbJFkSgBOEUfa4XBf3SYTyyLbjbE" download="Eyver-Gomez-CV-ES.pdf">Descargar CV ↓</a>
-          <a class="en red" href="https://drive.google.com/file/d/1oTCl7Uw4Oi6e_rFFbzss9x4ow9QPmfLq/preview" data-cv>View resume</a>
-          <a class="en" href="https://drive.google.com/uc?export=download&amp;id=1oTCl7Uw4Oi6e_rFFbzss9x4ow9QPmfLq" download="Eyver-Gomez-CV-EN.pdf">Download CV ↓</a>
+          <a class="es red" href="assets/cv/Eyver-Gomez-CV-ES.pdf" data-cv>Ver currículum</a>
+          <a class="es" href="assets/cv/Eyver-Gomez-CV-ES.pdf" download="Eyver-Gomez-CV-ES.pdf">Descargar CV ↓</a>
+          <a class="en red" href="assets/cv/Eyver-Gomez-CV-EN.pdf" data-cv>View resume</a>
+          <a class="en" href="assets/cv/Eyver-Gomez-CV-EN.pdf" download="Eyver-Gomez-CV-EN.pdf">Download CV ↓</a>
         </div>
       </div></div></div>
     </article>
@@ -413,7 +413,7 @@
           <a class="red" href="https://wa.me/573127115299" target="_blank" rel="noopener">WhatsApp ↗</a>
           <a href="https://cal.com/eyversgo/15min" target="_blank" rel="noopener"><span class="es">Agendar llamada ↗</span><span class="en">Book a call ↗</span></a>
         </div>
-        <form id="contact-form" action="https://formspree.io/f/myeeeyoe" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/mwlovggk" method="POST">
           <label><span>Proyecto</span><input name="project" required data-ph-es="Nombre de tu proyecto" data-ph-en="Your project name"></label>
           <label><span>Email</span><input name="email" type="email" required data-ph-es="Tu correo electrónico" data-ph-en="Your email"></label>
           <label><span>Mensaje</span><textarea name="message" required data-ph-es="Cuéntame los detalles técnicos..." data-ph-en="Tell me the technical details..."></textarea></label>
@@ -538,7 +538,7 @@
   ];
   const certTrack = document.getElementById('cert-track');
   certTrack.innerHTML = certs.map(([f, , en]) =>
-    `<div class="slide contain"><img src="assets/certs/${f}.png" alt="${en}" loading="lazy" decoding="async"></div>`).join('');
+    `<div class="slide contain"><img src="assets/certs/${f}.jpg" alt="${en}" loading="lazy" decoding="async"></div>`).join('');
   let certIndex = 0;
   function renderCaption() {
     const c = certs[certIndex];
@@ -593,10 +593,9 @@
   document.querySelectorAll('a[data-cv]').forEach(a => a.addEventListener('click', e => {
     if (!cvViewer.showModal) return;
     e.preventDefault();
-    const id = a.href.match(/\/d\/([^/]+)/)[1];
     cvFrame.src = a.href;
     const dl = document.getElementById('cv-download');
-    dl.href = `https://drive.google.com/uc?export=download&id=${id}`;
+    dl.href = a.href;
     dl.setAttribute('download', `Eyver-Gomez-CV-${html.lang.toUpperCase()}.pdf`);
     cvViewer.showModal();
   }));
