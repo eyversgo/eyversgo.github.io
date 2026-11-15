@@ -15,6 +15,7 @@
 
 <p align="center">
   <img src="./assets/screenshots/work.jpg" alt="Work 01: Apple Rebuilt" width="445">
+  <img src="./assets/screenshots/work-vetta.jpg" alt="Work 02: Vetta" width="445">
   <img src="./assets/screenshots/credentials.jpg" alt="Credentials carousel" width="445">
 </p>
 
